@@ -1,0 +1,5 @@
+[DPF-RHEL]
+name=CGTI/DPF - Repositório Red Hat Enterprise Linux $releasever
+baseurl=http://repos.dpf.gov.br/repo/RedHat-$releasever-$basearch/RPMS.all
+enabled=1
+gpgcheck=0
