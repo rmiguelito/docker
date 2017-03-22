@@ -1,4 +1,4 @@
-FROM pf/base-jdk
+FROM centos
 MAINTAINER  Rodrigo Miguel  rodrigomvi@algartech.com
 
 ENV EAP_VERSION 7.0.0

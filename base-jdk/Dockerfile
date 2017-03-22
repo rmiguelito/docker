@@ -1,4 +1,4 @@
-FROM pf/base
+FROM centos
 MAINTAINER  Rodrigo Miguel  rodrigomvi@algartech.com
 
 ENV JAVA_HOME /opt/jdk1.8_111
@@ -22,8 +22,5 @@ echo "yes" | keytool --storepass changeit -import -keystore $JAVA_CACERTS -file 
 echo "yes" | keytool --storepass changeit -import -keystore $JAVA_CACERTS -file $JAVA_HOME/certs/Autoridade_Certificadora_Serpro_v4.crt -alias Serprov4 && \
 echo "yes" | keytool --storepass changeit -import -keystore $JAVA_CACERTS -file $JAVA_HOME/certs/ICP-Brasil_AC_Raiz_v1.crt -alias AC_Raiz_ICP-Brasilv1 && \
 echo "yes" | keytool --storepass changeit -import -keystore $JAVA_CACERTS -file $JAVA_HOME/certs/ICP-Brasilv2.crt -alias ICP-Brasilv2 && \
-#ERRO# echo "yes" | keytool --storepass changeit -import -keystore $JAVA_CACERTS -file $JAVA_HOME/certs/ICP-Brasilv4.crt -alias ICP-Brasilv4 && \
 echo "yes" | keytool --storepass changeit -import -keystore $JAVA_CACERTS -file $JAVA_HOME/certs/ICP-Brasilv5.crt -alias ICP-Brasilv5 && \
-echo "yes" | keytool --storepass changeit -import -keystore $JAVA_CACERTS -file $JAVA_HOME/certs/PF-CA_2012-2017.crt -alias PF-CA_2012-2017 && \
-echo "yes" | keytool --storepass changeit -import -keystore $JAVA_CACERTS -file $JAVA_HOME/certs/PF-CA_2015-2055.crt -alias PF-CA_2015-2055 && \
 echo "yes" | keytool --storepass changeit -import -keystore $JAVA_CACERTS -file $JAVA_HOME/certs/full-chain-letsencrypt.pem -alias CA-LETSENCRYPT
