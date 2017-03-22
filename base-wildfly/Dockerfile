@@ -1,4 +1,4 @@
-FROM pf/base-jdk
+FROM base-jdk
 MAINTAINER  Rodrigo Miguel  rodrigomvi@algartech.com
 
 ENV WILDFLY_VERSION 10.1.0.Final

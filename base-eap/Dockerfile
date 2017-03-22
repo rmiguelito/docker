@@ -1,4 +1,4 @@
-FROM centos
+FROM base-jdk
 MAINTAINER  Rodrigo Miguel  rodrigomvi@algartech.com
 
 ENV EAP_VERSION 7.0.0
